@@ -1,5 +1,12 @@
 # Meu Projeto - Interface Web com React, Next.js e Tailwind CSS
 
+
+![image](https://github.com/user-attachments/assets/395f8447-ed06-413b-bbda-6c0b0f17f357)
+
+![image](https://github.com/user-attachments/assets/f3db2926-320b-42c3-abfd-7f25ca637259)
+
+
+
 Este projeto é uma interface web desenvolvida com React, Next.js e Tailwind CSS. Ele inclui páginas para cadastro, login, recuperação de senha e uma página inicial que exibe uma lista de usuários.
 
 ## Funcionalidades
