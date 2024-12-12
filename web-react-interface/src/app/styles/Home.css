@@ -1,0 +1,15 @@
+.home-container {
+    @apply p-6 bg-gray-100 min-h-screen;
+}
+
+.table {
+    @apply min-w-full border-collapse border border-gray-300 mt-4;
+}
+
+.table-header {
+    @apply bg-gray-200;
+}
+
+.table-cell {
+    @apply border border-gray-300 p-2;
+}

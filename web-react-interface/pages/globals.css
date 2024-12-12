@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f9f9f9; /* Cor de fundo mais suave */
+  --foreground: #333333;
+  --textcolor: #333333; /* Cor do texto mais escura para melhor legibilidade */
+  --primary: #3498db; /* Azul moderno */
+  --secondary: #f1c40f; /* Amarelo suave */
+  --border-color: #e0e0e0; /* Cor de borda suave */
+  --input-background: #ffffff; /* Fundo branco para inputs */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #2c2c2c; /* Fundo escuro */
+    --foreground: #ffffff; /* Texto branco */
+    --textcolor: #ffffff; /* Texto branco */
+    --primary: #3498db; /* Azul moderno */
+    --secondary: #f1c40f; /* Amarelo suave */
+    --border-color: #444444; /* Cor de borda escura */
+    --input-background: #3a3a3a; /* Fundo escuro para inputs */
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Fonte mais moderna */
+  line-height: 1.6; /* Aumenta o espaçamento entre linhas */
+}
+
+.form-container {
+  max-width: 500px; /* Largura máxima do formulário */
+  margin: 40px auto;
+  padding: 30px; /* Aumenta o padding para mais espaço interno */
+  background: var(--background);
+  border: 1px solid var(--border-color); /* Borda suave */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+}
+
+.form-title {
+  font-size: 28px; /* Tamanho de fonte maior */
+  font-weight: 600; /* Peso da fonte mais leve */
+  margin-bottom: 20px;
+  color: var(--foreground);
+  text-align: center; /* Centraliza o título */
+}
+
+.form-field {
+  margin-bottom: 25px; /* Aumenta o espaçamento entre os campos */
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 8px; /* Menos espaço abaixo do rótulo */
+  color: var(--foreground);
+  font-weight: 500; /* Peso da fonte mais leve */
+}
+
+.form-field input {
+  width: 100%;
+  padding: 12px; /* Aumenta o padding para mais conforto */
+  border: 1px solid var(--border-color); /* Borda suave */
+  border-radius: 5px; /* Bordas arredondadas */
+  color: var(--textcolor);
+  background-color: var(--input-background); /* Fundo branco */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+.form-field input:focus {
+  border-color: var(--primary); /* Cor da borda ao focar */
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); /* Sombra ao focar */
+  outline: none; /* Remove o contorno padrão */
+}
+
+/* Responsividade mobile */
+@media (max-width: 768px) {
+  .form-container {
+    max-width: 90%; 
+    margin: 20px auto;
+    padding: 20px; /* Ajusta o padding para dispositivos móveis */
+  }
+  .form-title {
+    font-size: 24px; /* Ajusta o tamanho do título */
+  }
+  .form-field {
+    margin-bottom: 20px; /* Ajusta o espaçamento entre os campos */
+  }
+  .form-field label {
+    margin-bottom: 5px; /* Ajusta o espaço abaixo do rótulo */
+  }
+  .form-field input {
+    padding: 10px; /* Ajusta o padding para dispositivos móveis */
+  }
+}

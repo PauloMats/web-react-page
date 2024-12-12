@@ -1,0 +1,15 @@
+.navbar {
+    @apply bg-white shadow-md py-4 px-6 flex justify-between items-center;
+}
+
+.navbar-logo {
+    @apply text-xl font-bold;
+}
+
+.navbar-links {
+    @apply flex space-x-4;
+}
+
+.navbar-link {
+    @apply text-gray-700 hover:text-blue-500 transition duration-200 ease-in-out;
+}
