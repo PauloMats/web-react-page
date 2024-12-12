@@ -2,7 +2,7 @@
   "name": "React Web App",
   "version": "1.0.0",
   "description": "Desafio técnico de Front End",
-  "main": "index.js",
+  "main": "index.tsx",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
