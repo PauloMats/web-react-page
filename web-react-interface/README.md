@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Meu Projeto - Interface Web com React, Next.js e Tailwind CSS
 
-## Getting Started
+Este projeto é uma interface web desenvolvida com React, Next.js e Tailwind CSS. Ele inclui páginas para cadastro, login, recuperação de senha e uma página inicial que exibe uma lista de usuários.
 
-First, run the development server:
+## Funcionalidades
+
+- **Cadastro de Usuário**: Permite que novos usuários se cadastrem com validação de CEP utilizando uma API externa.
+- **Login de Usuário**: Usuários podem se autenticar com e-mail e senha.
+- **Recuperação de Senha**: Usuários podem solicitar um link para recuperação de senha.
+- **Página Inicial**: Exibe uma lista de usuários em uma tabela organizada.
+
+## Tecnologias Utilizadas
+
+- [React](https://reactjs.org/)
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Context API](https://reactjs.org/docs/context.html) para gerenciamento de estado
+
+## Estrutura do Projeto
+
+/components 
+/Button.js 
+/Input.js 
+/Form.js 
+/NavBar.js 
+/pages 
+/cadastro.js 
+/login.js 
+/recuperacao.js 
+/home.js 
+/services 
+/authService.js 
+/cepService.js 
+/context 
+/AuthContext.js
+
+## Como Executar
+
+Para executar este projeto, você precisará ter o Node.js instalado em sua máquina. Em seguida, clone este repositório e execute os seguintes comandos:
 
 ```bash
+cd web-react-interface
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O projeto estará disponível em `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Cadastro: Acesse a página de cadastro e preencha os campos. O CEP será validado automaticamente.
 
-## Learn More
+Login: Acesse a página de login e insira suas credenciais.
 
-To learn more about Next.js, take a look at the following resources:
+Recuperação de Senha: Acesse a página de recuperação de senha e insira seu e-mail para receber um link de recuperação.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Home: Acesse a página inicial para visualizar a lista de usuários.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Licença
 
-## Deploy on Vercel
+Este projeto está licenciado sob a Licença MIT - consulte o arquivo [LICENSE](LICENSE) para obter detalhes.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Autor
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Feito com :heart: por [Paulo Mateus](https://www.linkedin.com/in/paulomatsdev)
+
+
